@@ -1,0 +1,337 @@
+@font-face{
+src:url(BLKCHCRY.TTF);
+font-family: BlackChancery;}
+
+@font-face{
+src:url(Staatliches.ttf);
+font-family: Staatliches;}
+
+p {
+  font-family: Arial;
+}
+
+h4{
+  color: #ff9933;
+  font-family: BlackChancery;
+
+  font-size: 45px;
+}
+
+
+.home-flex-container {
+
+  display: flex;
+  width:100% ;
+  clear:left ;
+padding: 15px 0px 0px 15px;
+flex-wrap: wrap;
+justify-content: flex-start;
+
+}
+
+.home-flex-container  {
+  background-color:transparent;
+  margin: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+#social{
+  background-color:transparent;
+}
+
+#homebotton{
+  background-color:  #ff9933;
+	color: white;
+}
+
+#heading {
+
+		font-size:30px;
+	font-family:BlackChancery;
+  font-weight:bold;
+  color:#ff9933;
+	text-align:center;
+ letter-spacing: 0.2em;
+
+}
+
+#formcontainer {
+
+	width:500px ;
+box-shadow: 3px 6px 15px #E6781E ;
+	float:left;
+  padding-top: 25px;
+  margin-top: 5%;
+	margin-left: 20px;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+#faqcontainer {
+	width:600px ;
+  margin-top: 5%;
+	height: 40%;
+  border-radius: 35px;
+  box-shadow: 3px 6px 15px #E6781E ;
+	float:left;
+}
+
+
+.btn{
+  color:#ff9933;
+  font-weight: 300;
+  font-family: Staatliches;
+  word-spacing: 0.1em;
+}
+
+.btn:hover{
+  color:#ff9933;
+ text-decoration: underline;
+ opacity: 0.8;
+}
+
+#formbtn{
+  background-color: #ff9933;
+  width:100px;
+	color: white;
+  margin-left: 38%;
+}
+
+ #formbtn:hover {
+  opacity: 0.8;
+}
+
+
+.form-group{
+
+    margin-left:12px;
+    margin-top:20px;
+}
+
+#contacts{
+	width:200px;
+	font-family:Arial;
+	text-align: center;
+	color:#FFF ;
+}
+
+.flex-container {
+  display: flex;
+  width:100% ;
+  clear:left ;
+padding-top:14px;
+padding-left:35px;
+padding-right:35px;
+padding-bottom: 40px;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+
+body{
+  background:url("back.png");
+  background-attachment: fixed ;
+  background-size: cover;
+}
+
+.flex-container > div {
+  background-color:white;
+  margin: 10px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.Cards-div-wrapper{
+  justify-content:space-around;
+  width: 100%;
+  background-color: transparent;
+
+}
+
+#cardsdivwrapper{
+  padding-left: 10%;
+  background-color: transparent;
+}
+
+
+.Cards-div {
+    display: flex;
+    width: 400px;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-wrap: wrap;
+		background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+#cardsdiv{
+  background-color: transparent;
+  margin-top: 10%;
+}
+
+#contact{
+  width:100%;
+  background-color: transparent
+}
+
+.Cards-div img{
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 3px 6px 15px #C05A05 ;
+}
+
+.des-card {
+    width: 40%;
+  background-color:transparent;
+    margin: 0 25px 0 25px;
+    font-weight: 500;
+    transition: 0.25s ease-in-out;
+    padding-top: 40px;
+    color:#ff3300;
+    font-size: 18px;
+    font-family: Staatliches;
+}
+
+
+
+.card{
+  background-color: transparent;
+  border: none;
+}
+
+
+.bs-example{
+        margin: 20px;
+    }
+
+.accordion .fa{
+        margin-right: 1.8rem;
+    }
+
+.input-group{
+  margin-top: 45px;
+  width:78%;
+  margin-left: 11%;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,0);
+    border-bottom: 0px solid rgba(0,0,0,.125);
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background-color: rgba(0,0,0,0.100);
+    border-radius: 10px;
+}
+
+@media(max-width:840px)
+{
+  .Cards-div img{
+    margin-top: 25px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .des-card {
+      width: 40%;
+      margin: 0 25px 0 25px;
+      font-weight: 500;
+      padding-top: 40px;
+  }
+}
+
+@media(max-width:750px)
+{
+
+  #cardsdivwrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 25%;
+  }
+
+  .Cards-div-wrapper{
+    justify-content:center;
+  }
+
+}
+
+@media(max-width:500px)
+{
+
+  .flex-container {
+    display: flex;
+    width:100% ;
+    clear:left ;
+  padding-top:14px;
+  padding-left:0;
+  margin-left: 40px;
+  margin-right:0;
+  padding-right:0;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content:center;
+  }
+
+  .flex-container > div {
+    background-color:white;
+    width: 100%;
+    margin-left: 0px;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  #cardsdivwrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .Cards-div-wrapper{
+    justify-content:center;
+  }
+
+  .des-card {
+      width: 40%;
+    background-color:transparent;
+      marginleft: 5%;
+      font-weight: 500;
+      transition: 0.25s ease-in-out;
+      padding-top: 40px;
+      color:#ff3300;
+      font-size: 18px;
+      font-family: Staatliches;
+  }
+
+  .Cards-div {
+      display: flex;
+      width: 400px;
+      justify-content:center;
+      align-items:center;
+      flex-wrap: wrap;
+  		background-color: transparent;
+      transition: 0.3s ease-in-out;
+  }
+
+  #formcontainer {
+  	margin-left: 0px;
+  }
+
+  #formbtn{
+    background-color: #ff9933;
+    width:100px;
+  	color: white;
+    margin-left: 38%;
+    margin-bottom: 5%;
+  }
+
+}

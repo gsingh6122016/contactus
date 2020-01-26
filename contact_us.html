@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="contactus.css">
+
+    <script>
+        $(document).ready(function(){
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function(){
+              $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function(){
+              $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+            }).on('hide.bs.collapse', function(){
+              $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+
+
+
+<div class="flex-container">
+
+  <div class="home-flex-container" id="social">
+  			<button class="btn" id="homebotton"><i class="fa fa-home"></i></button>
+  </div>
+
+  <div id = "formcontainer" class="card">
+
+      <div class="tshirt-form-wrapper">
+
+        <form class="tshirt-form-inner needs-validation" autocomplete="off" id="tshirt_form" novalidate>
+          <h4 class="mb-4 text-center merch-header">Contact &nbsp Us</h4>
+
+              <div class="input-group mb-4 input-group-sm">
+
+            <input type="text" id="name" class="form-control" name="name" placeholder="Enter name" required>
+          </div>
+
+
+          <div class="input-group mb-4 input-group-sm">
+
+            <input type="email" id="email" class="form-control" name="email" placeholder="Enter email" required>
+          </div>
+
+
+
+
+          <div class="input-group mb-4 input-group-sm">
+
+            <input type="tel" id="phone" minlength="10" maxlength="10" class="form-control" name="phone" placeholder="Enter Phone number" required>
+          </div>
+
+
+          <div class="input-group mb-4 input-group-sm">
+
+            <input type="text" id="subject" class="form-control" name="subject" placeholder="Enter Subject" required>
+          </div>
+
+          <div class="input-group mb-4 input-group-sm">
+
+            <textarea type="text" id="message" class="form-control" name="message" placeholder="Enter Query" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-sm btn-block" id="formbtn">Submit</button>
+
+        </div>
+	</div>
+
+
+
+
+
+    <div id="faqcontainer">
+
+		<h1 id="heading">F.A.Q</h1>
+
+		<div class="accordion" id="accordionExample">
+
+  <div class="card">
+              <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                      <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i><span> How can i apply for accomodation ?</button>
+                  </h2>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGo to the accomodation section or click in this link <a href="#" target="_blank">here.</a></p>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="card">
+                      <div class="card-header" id="headingTwo">
+                          <h2 class="mb-0">
+                              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i> What is the name of the Technical Fest of KGEC ?</button>
+                          </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <div class="card-body">
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTECHTIX is the Technical fest .
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="card">
+                              <div class="card-header" id="headingThree">
+                                  <h2 class="mb-0">
+                                      <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>What is the name of the Cultural Fest of KGEC ?</button>
+                                  </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEXOTICA is the cultural fest of KGEC.
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="card">
+                                      <div class="card-header" id="headingFour">
+                                          <h2 class="mb-0">
+                                              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseFour"><i class="fa fa-plus"></i>Who made this Awesome page ?</button>
+                                          </h2>
+                                      </div>
+                                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                          <div class="card-body">
+                                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGourav Singh naam to suna hi hoga.
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="card">
+                                              <div class="card-header" id="headingFive">
+                                                  <h2 class="mb-0">
+                                                      <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseFive"><i class="fa fa-plus"></i>Which artist is coming ?</button>
+                                                  </h2>
+                                              </div>
+                                              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                                  <div class="card-body">
+                                                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspI won't tell you sorry.
+                                                  </div>
+                                              </div>
+                                          </div>
+
+</div>
+	</div>
+
+<div class="Cards-div-wrapper" id="cardsdivwrapper"  style="display: flex;">
+
+  <div class="Cards-div" id="cardsdiv" style="display: flex;">
+                  <img src="bill.jpg" >
+                      <div class="des-card" >
+                          Joy Sharma<br>
+                          General Secretory<br>
+                          8827288383<br>
+                          wertyt@gmail.com
+                      </div>
+
+    </div>
+    <div class="Cards-div" id="cardsdiv" style="display: flex;">
+                    <img src="bill.jpg" >
+                        <div class="des-card">
+                            Joy Sharma<br>
+                            General Secretory<br>
+                              8827288383<br>
+                            wertyt@gmail.com
+                        </div>
+      </div>
+
+</div>
+
+</div>
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+
+
+	<script>
+      (function(){
+          //console.log("hello");
+            'use strict';
+            window.addEventListener('load', function() {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        if (form.checkValidity() === false)
+                        {
+                            event.stopPropagation();
+                            form.classList.add('was-validated');
+                        }
+                        else
+                        {
+                            //swal("Good job!", "You clicked the button!", "success");
+                            let cnts = $('form').serializeArray();
+                            let contacts = {};
+                            for(var i = 0;i<cnts.length;i++){
+                                contacts[cnts[i].name] = cnts[i].value;
+                            }
+                            console.log(contacts);
+                            // $.ajax
+                            // (
+                            //     {
+                            //         url:"http://localhost:5000/apis/shirtform",
+                            //         dataType : "form",
+                            //         method : "POST",
+                            //         data : contacts,
+                            //         statusCode:
+                            //         {
+                            //             200:function()
+                            //             {
+                            //                 swal("Success!", "Responsed saved successfully", "success");
+                            //                 $("#tshirt_form").trigger("reset");
+                            //             },
+                            //             422 : function()
+                            //             {
+                            //                 swal("Error!", "Invalid Inputs", "error");
+                            //                 form.classList.add('was-validated');
+                            //             },
+                            //             500 : function()
+                            //             {
+                            //                 swal("Error!", "Server error", "error");
+                            //                 form.classList.add('was-validated');
+                            //             },
+                            //             404 : function()
+                            //             {
+                            //                 swal("Error!", "Invalid Api", "error");
+                            //                 form.classList.add('was-validated');
+                            //             }
+                            //         }
+                            //     }
+                            // )
+                        }
+                    },false);
+                });
+            });
+      })();
+    </script>
+
+</body>
+</html>
