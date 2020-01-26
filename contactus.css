@@ -68,6 +68,10 @@ box-shadow: 3px 6px 15px #E6781E ;
   overflow: hidden;
 }
 
+.tshirt-form-wrapper{
+  padding-bottom: 4% ;
+}
+
 #faqcontainer {
 	width:600px ;
   margin-top: 5%;
@@ -101,6 +105,7 @@ box-shadow: 3px 6px 15px #E6781E ;
   border-color: #ff9933;
   /* letter-spacing: 0.1em ; */
   margin-left: 38%;
+  margin-top: 6%;
 }
 
  #formbtn:hover {
