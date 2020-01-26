@@ -91,14 +91,22 @@ box-shadow: 3px 6px 15px #E6781E ;
 }
 
 #formbtn{
-  background-color: #ff9933;
+  background-color: transparent;
+  letter-spacing: 0.1em;
+  font-weight: bold;
   width:100px;
-	color: white;
+	color: #ff9933;
+  border-radius: 5% ;
+  border-color: #ff9933;
+  /* letter-spacing: 0.1em ; */
   margin-left: 38%;
 }
 
  #formbtn:hover {
-  opacity: 0.8;
+  /* opacity: 0.8; */
+  background-color: #ff9933;
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -162,6 +170,14 @@ body{
     flex-wrap: wrap;
 		background-color: transparent;
     transition: 0.3s ease-in-out;
+    border-top: solid ;
+    border-bottom: solid ;
+    border-color:#ff9933;
+    padding-top: 2% ;
+    padding-bottom: 3% ;
+    /* box-shadow: 3px 6px 15px #E6781E ; */
+    border-width: thick;
+
 }
 
 #cardsdiv{
