@@ -245,7 +245,7 @@ body{
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 1.25rem;
-    background-color: rgba(0,0,0,0.100);
+    background-color: rgb(252, 220, 166);
     border-radius: 10px;
 }
 
